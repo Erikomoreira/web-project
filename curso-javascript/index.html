@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<meta charset="utf-8">
+
+	<title id="t">Iniciando</title>
+
+	<!-- CSS utilização arquivo Externo -->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<!-- CSS utilização interno -->
+	<style type="text/css">
+
+    #demo2 { 
+    	color:yellow;
+     }
+
+    </style>
+
+</head>
+
+<body>
+
+	<!-- CSS utilização inline -->
+	<p style="color:yellow" id="demo"></p>
+	<p id="demo2"></p>
+
+	<button onclick="mensagem()"> Teste </button>
+	<button onclick="mensagemTela()"> Teste2 </button>
+	<button onclick="debugar()"> Teste3 </button>
+	<button onclick="variaveis()"> Teste4 </button>
+
+	<script type="text/javascript">
+		var nome = prompt('Digite seu nome: ');
+
+		if (nome == null) {
+			nome = "Visitante";
+		}
+
+		alert(nome + ', seja bem vindo!');
+	</script>
+
+	<script type="text/javascript">
+	  alert('Hello World!');
+	</script>
+
+	<!-- JavaScript utilização inline -->
+	<script>
+		var carName = "Volvo";
+
+		var cars = [
+	"Volvo",
+	"Corola",
+	"City"
+]
+
+		document.getElementById("demo").innerHTML = cars; 
+	</script>
+
+	<!-- JavaScript utilização arquivo Externo -->
+	<script src="./index.js"></script>
+
+</body>
+</html>
